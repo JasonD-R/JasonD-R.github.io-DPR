@@ -269,8 +269,8 @@ header {
     text-align: left;
     color: #ffffff; /* This changes the text color that is on front */
     background-attachment: scroll;
-    background-image: url(../img/index.jpeg); /* This changes the picture at the top of the page */
-    background-position:  center right; /* was center center*/ /*new position for crest image, 460px -30px*/
+    background-image: url(../img/DPRCrest.jpg); /* This changes the picture at the top of the page */
+    background-position: none; /* The DPRCrest.jpg is set to be in center */
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
