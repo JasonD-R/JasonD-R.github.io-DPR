@@ -510,6 +510,7 @@ section h4.section-subheading {
     text-align: center;
     color: #fff;
     background-color: #fed136;
+    overflow: hidden;
 }
 
 .timeline>li .timeline-image h4 {
@@ -565,6 +566,7 @@ section h4.section-subheading {
 
 @media(min-width:768px) {
     .timeline:before {
+        overflow: hidden;
         left: 50%;
     }
 
@@ -602,6 +604,7 @@ section h4.section-subheading {
 
 @media(min-width:992px) {
     .timeline>li {
+        overflow: hidden;
         min-height: 150px;
     }
 
@@ -628,6 +631,7 @@ section h4.section-subheading {
 
 @media(min-width:1200px) {
     .timeline>li {
+        overflow: hidden;
         min-height: 170px;
     }
 
