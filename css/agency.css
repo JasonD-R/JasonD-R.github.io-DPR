@@ -511,6 +511,17 @@ section h4.section-subheading {
     color: #fff;
     background-color: #fed136;
     overflow: hidden;
+    cursor: grab;
+    touch-action: none;
+}
+
+.timeline>li .timeline-image:focus {
+    outline: 2px solid #fed136;
+    outline-offset: 2px;
+}
+
+.timeline>li .timeline-image.is-dragging {
+    cursor: grabbing;
 }
 
 .timeline>li .timeline-image h4 {
@@ -520,10 +531,14 @@ section h4.section-subheading {
 }
 
 .timeline>li .timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    transform-origin: center center;
+    user-select: none;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -544,6 +559,10 @@ section h4.section-subheading {
     left: -14px;
     border-right-width: 14px;
     border-left-width: 0;
+}
+
+.timeline-zoom-help {
+    margin: 10px 0 30px;
 }
 
 .timeline>li:last-child {

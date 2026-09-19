@@ -376,6 +376,26 @@ section {
             border-radius: 100%;
             border: 7px solid #f1f1f1;
             text-align: center;
+            overflow: hidden;
+            cursor: grab;
+            touch-action: none;
+            &:focus {
+                outline: 2px solid @brand-primary;
+                outline-offset: 2px;
+            }
+            &.is-dragging {
+                cursor: grabbing;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto;
+                height: auto;
+                max-width: none;
+                transform-origin: center center;
+                user-select: none;
+            }
             h4 {
             	font-size: 10px;
             	margin-top: 12px;
@@ -391,6 +411,10 @@ section {
                 border-right-width: 15px;
                 left: -15px;
                 right: auto;
+            }
+
+            .timeline-zoom-help {
+                margin: 10px 0 30px;
             }
             &:after {
                 border-left-width: 0;
